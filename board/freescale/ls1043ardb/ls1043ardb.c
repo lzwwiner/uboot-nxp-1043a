@@ -133,7 +133,7 @@ int board_early_init_f(void)
 }
 
 #ifndef CONFIG_SPL_BUILD
-
+#if 0
 int checkboard(void)
 {
 #ifdef CONFIG_TFABOOT
@@ -183,7 +183,7 @@ int checkboard(void)
 
 	return 0;
 }
-
+#endif
 int board_init(void)
 {
 	struct ccsr_scfg *scfg = (struct ccsr_scfg *)CONFIG_SYS_FSL_SCFG_ADDR;
